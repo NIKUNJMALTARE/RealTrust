@@ -1,4 +1,3 @@
-// frontend/src/App.jsx
 import { Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from "./pages/LandingPage.jsx";
 import AdminLoginPage from "./pages/AdminLoginPage.jsx";
@@ -19,11 +18,8 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-
-      {/* Admin login (redirects to /admin if already logged in) */}
       <Route path="/admin/login" element={<PublicAdminLoginRoute />} />
 
-      {/* Admin dashboard protected route */}
       <Route
         path="/admin"
         element={
