@@ -1,3 +1,5 @@
+import heroImg from "../../assets/hero.png";
+
 const HeroSection = () => {
   return (
     <section className="hero">
@@ -13,7 +15,7 @@ const HeroSection = () => {
           </a>
         </div>
         <div className="hero-image">
-          <div className="hero-placeholder">Hero Image</div>
+          <img src={heroImg} alt="Real estate consultation" />
         </div>
       </div>
     </section>
