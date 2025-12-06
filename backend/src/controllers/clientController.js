@@ -22,7 +22,7 @@ export const createClient = async (req, res, next) => {
     }
 
     const result = await cloudinary.uploader.upload(file.path, {
-      folder: "realtrust/clients",
+      folder: "Panelio/clients",
       use_filename: true,
       unique_filename: false,
       resource_type: "image"
